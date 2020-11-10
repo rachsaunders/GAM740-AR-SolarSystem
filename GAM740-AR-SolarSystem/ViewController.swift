@@ -4,6 +4,7 @@
 //
 //  Created by Rachel Saunders on 10/11/2020.
 //
+// Images used from https://www.solarsystemscope.com/textures/ 
 
 import UIKit
 import SceneKit
@@ -22,11 +23,38 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        let sun = createPlanet(radius: 0.25, image: "2k_sun")
+        sun.position = SCNVector3(x: 0, y: -0.5, z: -1)
+        
+        rotateObject(rotation: -0.3, planet: sun, duration: 1)
+        
+        
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        sceneView.scene.rootNode.addChildNode(sun)
+        
+    }
+    
+    func createPlanet(radius: Float, image: String) -> SCNNode{
+        let planet = SCNSphere(radius: CGFloat(radius))
+        let material = SCNMaterial()
+        material.diffuse.contents = UIImage(named: "\(image).jpg")
+        planet.materials = [material]
+        
+        let planetNode = SCNNode(geometry: planet)
+        
+        return planetNode
+        
+    }
+    
+    func rotateObject(rotation: Float, planet: SCNNode, duration: Float) {
+        let rotation = SCNAction.rotateBy(x: 0, y: CGFloat(rotation), z: 0, duration: TimeInterval(duration))
+        
+        planet.runAction((SCNAction.repeatForever(rotation)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
