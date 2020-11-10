@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F43820255B005600B1680C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4381F255B005600B1680C /* AppDelegate.swift */; };
+		18F43822255B005600B1680C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F43821255B005600B1680C /* art.scnassets */; };
+		18F43824255B005600B1680C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43823255B005600B1680C /* ViewController.swift */; };
+		18F43827255B005600B1680C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F43825255B005600B1680C /* Main.storyboard */; };
+		18F43829255B005600B1680C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F43828255B005600B1680C /* Assets.xcassets */; };
+		18F4382C255B005600B1680C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F4382A255B005600B1680C /* LaunchScreen.storyboard */; };
+		18F43837255B005700B1680C /* GAM740_AR_SolarSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43836255B005700B1680C /* GAM740_AR_SolarSystemTests.swift */; };
+		18F43842255B005700B1680C /* GAM740_AR_SolarSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F43841255B005700B1680C /* GAM740_AR_SolarSystemUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F43833255B005600B1680C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F43814255B005600B1680C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F4381B255B005600B1680C;
+			remoteInfo = "GAM740-AR-SolarSystem";
+		};
+		18F4383E255B005700B1680C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F43814255B005600B1680C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F4381B255B005600B1680C;
+			remoteInfo = "GAM740-AR-SolarSystem";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F4381C255B005600B1680C /* GAM740-AR-SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GAM740-AR-SolarSystem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F4381F255B005600B1680C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18F43821255B005600B1680C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		18F43823255B005600B1680C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18F43826255B005600B1680C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F43828255B005600B1680C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F4382B255B005600B1680C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F4382D255B005600B1680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F43832255B005600B1680C /* GAM740-AR-SolarSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GAM740-AR-SolarSystemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F43836255B005700B1680C /* GAM740_AR_SolarSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAM740_AR_SolarSystemTests.swift; sourceTree = "<group>"; };
+		18F43838255B005700B1680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F4383D255B005700B1680C /* GAM740-AR-SolarSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GAM740-AR-SolarSystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F43841255B005700B1680C /* GAM740_AR_SolarSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAM740_AR_SolarSystemUITests.swift; sourceTree = "<group>"; };
+		18F43843255B005700B1680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F43819255B005600B1680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F4382F255B005600B1680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F4383A255B005700B1680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F43813255B005600B1680C = {
+			isa = PBXGroup;
+			children = (
+				18F4381E255B005600B1680C /* GAM740-AR-SolarSystem */,
+				18F43835255B005600B1680C /* GAM740-AR-SolarSystemTests */,
+				18F43840255B005700B1680C /* GAM740-AR-SolarSystemUITests */,
+				18F4381D255B005600B1680C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F4381D255B005600B1680C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F4381C255B005600B1680C /* GAM740-AR-SolarSystem.app */,
+				18F43832255B005600B1680C /* GAM740-AR-SolarSystemTests.xctest */,
+				18F4383D255B005700B1680C /* GAM740-AR-SolarSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F4381E255B005600B1680C /* GAM740-AR-SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				18F4381F255B005600B1680C /* AppDelegate.swift */,
+				18F43821255B005600B1680C /* art.scnassets */,
+				18F43823255B005600B1680C /* ViewController.swift */,
+				18F43825255B005600B1680C /* Main.storyboard */,
+				18F43828255B005600B1680C /* Assets.xcassets */,
+				18F4382A255B005600B1680C /* LaunchScreen.storyboard */,
+				18F4382D255B005600B1680C /* Info.plist */,
+			);
+			path = "GAM740-AR-SolarSystem";
+			sourceTree = "<group>";
+		};
+		18F43835255B005600B1680C /* GAM740-AR-SolarSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F43836255B005700B1680C /* GAM740_AR_SolarSystemTests.swift */,
+				18F43838255B005700B1680C /* Info.plist */,
+			);
+			path = "GAM740-AR-SolarSystemTests";
+			sourceTree = "<group>";
+		};
+		18F43840255B005700B1680C /* GAM740-AR-SolarSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F43841255B005700B1680C /* GAM740_AR_SolarSystemUITests.swift */,
+				18F43843255B005700B1680C /* Info.plist */,
+			);
+			path = "GAM740-AR-SolarSystemUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F4381B255B005600B1680C /* GAM740-AR-SolarSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F43846255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystem" */;
+			buildPhases = (
+				18F43818255B005600B1680C /* Sources */,
+				18F43819255B005600B1680C /* Frameworks */,
+				18F4381A255B005600B1680C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GAM740-AR-SolarSystem";
+			productName = "GAM740-AR-SolarSystem";
+			productReference = 18F4381C255B005600B1680C /* GAM740-AR-SolarSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F43831255B005600B1680C /* GAM740-AR-SolarSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F43849255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystemTests" */;
+			buildPhases = (
+				18F4382E255B005600B1680C /* Sources */,
+				18F4382F255B005600B1680C /* Frameworks */,
+				18F43830255B005600B1680C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F43834255B005600B1680C /* PBXTargetDependency */,
+			);
+			name = "GAM740-AR-SolarSystemTests";
+			productName = "GAM740-AR-SolarSystemTests";
+			productReference = 18F43832255B005600B1680C /* GAM740-AR-SolarSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F4383C255B005700B1680C /* GAM740-AR-SolarSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F4384C255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystemUITests" */;
+			buildPhases = (
+				18F43839255B005700B1680C /* Sources */,
+				18F4383A255B005700B1680C /* Frameworks */,
+				18F4383B255B005700B1680C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F4383F255B005700B1680C /* PBXTargetDependency */,
+			);
+			name = "GAM740-AR-SolarSystemUITests";
+			productName = "GAM740-AR-SolarSystemUITests";
+			productReference = 18F4383D255B005700B1680C /* GAM740-AR-SolarSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F43814255B005600B1680C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					18F4381B255B005600B1680C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					18F43831255B005600B1680C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 18F4381B255B005600B1680C;
+					};
+					18F4383C255B005700B1680C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 18F4381B255B005600B1680C;
+					};
+				};
+			};
+			buildConfigurationList = 18F43817255B005600B1680C /* Build configuration list for PBXProject "GAM740-AR-SolarSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F43813255B005600B1680C;
+			productRefGroup = 18F4381D255B005600B1680C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F4381B255B005600B1680C /* GAM740-AR-SolarSystem */,
+				18F43831255B005600B1680C /* GAM740-AR-SolarSystemTests */,
+				18F4383C255B005700B1680C /* GAM740-AR-SolarSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F4381A255B005600B1680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F43822255B005600B1680C /* art.scnassets in Resources */,
+				18F4382C255B005600B1680C /* LaunchScreen.storyboard in Resources */,
+				18F43829255B005600B1680C /* Assets.xcassets in Resources */,
+				18F43827255B005600B1680C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F43830255B005600B1680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F4383B255B005700B1680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F43818255B005600B1680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F43824255B005600B1680C /* ViewController.swift in Sources */,
+				18F43820255B005600B1680C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F4382E255B005600B1680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F43837255B005700B1680C /* GAM740_AR_SolarSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F43839255B005700B1680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F43842255B005700B1680C /* GAM740_AR_SolarSystemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F43834255B005600B1680C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F4381B255B005600B1680C /* GAM740-AR-SolarSystem */;
+			targetProxy = 18F43833255B005600B1680C /* PBXContainerItemProxy */;
+		};
+		18F4383F255B005700B1680C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F4381B255B005600B1680C /* GAM740-AR-SolarSystem */;
+			targetProxy = 18F4383E255B005700B1680C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18F43825255B005600B1680C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F43826255B005600B1680C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F4382A255B005600B1680C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F4382B255B005600B1680C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F43844255B005700B1680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18F43845255B005700B1680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F43847255B005700B1680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F43848255B005700B1680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18F4384A255B005700B1680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystemTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAM740-AR-SolarSystem.app/GAM740-AR-SolarSystem";
+			};
+			name = Debug;
+		};
+		18F4384B255B005700B1680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystemTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GAM740-AR-SolarSystem.app/GAM740-AR-SolarSystem";
+			};
+			name = Release;
+		};
+		18F4384D255B005700B1680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystemUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GAM740-AR-SolarSystem";
+			};
+			name = Debug;
+		};
+		18F4384E255B005700B1680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFMS5Y826S;
+				INFOPLIST_FILE = "GAM740-AR-SolarSystemUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelsaunders.GAM740-AR-SolarSystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GAM740-AR-SolarSystem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F43817255B005600B1680C /* Build configuration list for PBXProject "GAM740-AR-SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F43844255B005700B1680C /* Debug */,
+				18F43845255B005700B1680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F43846255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F43847255B005700B1680C /* Debug */,
+				18F43848255B005700B1680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F43849255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F4384A255B005700B1680C /* Debug */,
+				18F4384B255B005700B1680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F4384C255B005700B1680C /* Build configuration list for PBXNativeTarget "GAM740-AR-SolarSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F4384D255B005700B1680C /* Debug */,
+				18F4384E255B005700B1680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F43814255B005600B1680C /* Project object */;
+}
