@@ -87,6 +87,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         rotateObject(rotation: 0.25, planet: uranusRing, duration: 1)
         rotateObject(rotation: 0.2, planet: neptuneRing, duration: 1)
         
+        //MARK:- MOON
+        
+        let moon = createPlanet(radius: 0.01, image: "2k_moon")
+        let moonRing = SCNTorus(ringRadius: 0.08, pipeRadius: 0.000001)
+        let moonRingNode = SCNNode(geometry: moonRing)
+        moon.position = SCNVector3(x: 0.08, y: 0, z: 0)
+        moonRingNode.position = SCNVector3(x: 0, y: 0.02, z: 0)
+        moonRingNode.addChildNode(moon)
+        
+        earth.addChildNode(moonRingNode)
+        
+        //MARK:- SATURN RINGS(LOOPS)
+    
+        // NEED A TEXTURE!
+//
+//        let saturnLoop = SCNBox(width: 0.4, height: 0, length: 0.5, chamferRadius: 0)
+//        let material = SCNMaterial()
+//        material.diffuse.contents = UIImage(named: "")
+//        saturnLoop.materials = [material]
+//
+//        let loopNode = SCNNode(geometry: saturnLoop)
+//        loopNode.rotation = SCNVector4( -0.5, -0.5, 0, 5)
+//        loopNode.position = SCNVector3(x: 0, y: 0, z: 0)
+//
+//        saturn.addChildNode(loopNode)
+//
         //MARK:- ADDS THE NODES TO THE SCENE
         
         venusRing.addChildNode(venus)
