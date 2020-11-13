@@ -14,6 +14,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    let baseNode = SCNNode()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +26,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         let sun = createPlanet(radius: 0.25, image: "2k_sun")
-        sun.position = SCNVector3(x: 0, y: -0.5, z: -1)
+        sun.position = SCNVector3(x: 0, y: 0, z: 0)
         
         rotateObject(rotation: -0.3, planet: sun, duration: 1)
         
@@ -33,9 +35,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let mercury = createPlanet(radius: 0.03, image: "mercury")
         mercury.position = SCNVector3(x: 0.3, y: 0, z: 0)
         
+        // rotate
+        rotateObject(rotation: 0.6, planet: mercury, duration: 0.4)
+        rotateObject(rotation: 0.6, planet: mercuryRing, duration: 1)
+        
         mercuryRing.addChildNode(mercury)
         
-        sun.addChildNode(mercuryRing)
+        baseNode.addChildNode(sun)
+        
+        baseNode.addChildNode(mercuryRing)
+        
+        baseNode.position = SCNVector3(x: 0, y: -0.5, z: -1)
         
         
         
@@ -47,7 +57,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
-        sceneView.scene.rootNode.addChildNode(sun)
+        sceneView.scene.rootNode.addChildNode(baseNode)
         
     }
     
