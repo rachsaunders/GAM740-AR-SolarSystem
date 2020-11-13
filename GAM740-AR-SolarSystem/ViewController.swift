@@ -12,6 +12,7 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
+    //MARK:- OUTLETS
     @IBOutlet var sceneView: ARSCNView!
     
     let baseNode = SCNNode()
@@ -25,31 +26,89 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        
+        //MARK:- THE SUN
         let sun = createPlanet(radius: 0.25, image: "2k_sun")
         sun.position = SCNVector3(x: 0, y: 0, z: 0)
-        
         rotateObject(rotation: -0.3, planet: sun, duration: 1)
         
-        // Planet Rings and planets
+        //MARK:- THE PLANETS RINGS
+        
         let mercuryRing = createRings(ringSize: 0.3)
-        let mercury = createPlanet(radius: 0.03, image: "mercury")
+        let venusRing = createRings(ringSize: 0.5)
+        let earthRing = createRings(ringSize: 0.7)
+        let marsRing = createRings(ringSize: 0.8)
+        let jupiterRing = createRings(ringSize: 1)
+        let saturnRing = createRings(ringSize: 1.25)
+        let uranusRing = createRings(ringSize: 1.5)
+        let neptuneRing = createRings(ringSize: 1.7)
+        
+        
+        //MARK: - CREATE PLANETS
+        
+        let mercury = createPlanet(radius: 0.03, image: "2k_mercury")
+        let venus = createPlanet(radius: 0.04, image: "2k_venus")
+        let earth = createPlanet(radius: 0.05, image: "2k_earth")
+        let mars = createPlanet(radius: 0.03, image: "2k_mars")
+        let jupiter = createPlanet(radius: 0.12, image: "2k_jupiter")
+        let saturn = createPlanet(radius: 0.09, image: "2k_saturn")
+        let uranus = createPlanet(radius: 0.07, image: "2k_uranus")
+        let neptune = createPlanet(radius: 0.08, image: "2k_neptune")
+        
+        //MARK: - VECTOR POSITIONS OF PLANETS
+        
         mercury.position = SCNVector3(x: 0.3, y: 0, z: 0)
+        venus.position = SCNVector3(x: 0.5, y: 0, z: 0)
+        earth.position = SCNVector3(x: 0.7, y: 0, z: 0)
+        mars.position = SCNVector3(x: 0.8, y: 0, z: 0)
+        jupiter.position = SCNVector3(x: 1, y: 0, z: 0)
+        saturn.position = SCNVector3(x: 1.25, y: 0, z: 0)
+        uranus.position = SCNVector3(x: 1.5, y: 0, z: 0)
+        neptune.position = SCNVector3(x: 1.7, y: 0, z: 0)
         
-        // rotate
+        
+        //MARK:- ROTATION OF PLANETS AND RINGS
+
         rotateObject(rotation: 0.6, planet: mercury, duration: 0.4)
-        rotateObject(rotation: 0.6, planet: mercuryRing, duration: 1)
+        rotateObject(rotation: 0.4, planet: venus, duration: 0.4)
+        rotateObject(rotation: 0.25, planet: earth, duration: 0.4)
+        rotateObject(rotation: 0.2, planet: mars, duration: 0.4)
+        rotateObject(rotation: 0.45, planet: jupiter, duration: 0.4)
+        rotateObject(rotation: 0.34, planet: saturn, duration: 0.4)
+        rotateObject(rotation: 0.25, planet: uranus, duration: 0.4)
+        rotateObject(rotation: 0.2, planet: neptune, duration: 0.4)
         
+        rotateObject(rotation: 0.6, planet: mercuryRing, duration: 1)
+        rotateObject(rotation: 0.4, planet: venusRing, duration: 1)
+        rotateObject(rotation: 0.25, planet: earthRing, duration: 1)
+        rotateObject(rotation: 0.2, planet: marsRing, duration: 1)
+        rotateObject(rotation: 0.45, planet: jupiterRing, duration: 1)
+        rotateObject(rotation: 0.34, planet: saturnRing, duration: 1)
+        rotateObject(rotation: 0.25, planet: uranusRing, duration: 1)
+        rotateObject(rotation: 0.2, planet: neptuneRing, duration: 1)
+        
+        //MARK:- ADDS THE NODES TO THE SCENE
+        
+        venusRing.addChildNode(venus)
         mercuryRing.addChildNode(mercury)
+        earthRing.addChildNode(earth)
+        marsRing.addChildNode(mars)
+        jupiterRing.addChildNode(jupiter)
+        saturnRing.addChildNode(saturn)
+        uranusRing.addChildNode(uranus)
+        neptuneRing.addChildNode(neptune)
         
         baseNode.addChildNode(sun)
-        
         baseNode.addChildNode(mercuryRing)
+        baseNode.addChildNode(venusRing)
+        baseNode.addChildNode(earthRing)
+        baseNode.addChildNode(marsRing)
+        baseNode.addChildNode(jupiterRing)
+        baseNode.addChildNode(saturnRing)
+        baseNode.addChildNode(uranusRing)
+        baseNode.addChildNode(neptuneRing)
         
         baseNode.position = SCNVector3(x: 0, y: -0.5, z: -1)
-        
-        
-        
-        
         
         // Create a new scene
         let scene = SCNScene()
@@ -60,6 +119,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.addChildNode(baseNode)
         
     }
+    
+    //MARK:- CREATING THE PLANET
+    
     
     func createPlanet(radius: Float, image: String) -> SCNNode{
         let planet = SCNSphere(radius: CGFloat(radius))
@@ -73,11 +135,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
+    //MARK:- ROTATING THE PLANETS
+    
     func rotateObject(rotation: Float, planet: SCNNode, duration: Float) {
         let rotation = SCNAction.rotateBy(x: 0, y: CGFloat(rotation), z: 0, duration: TimeInterval(duration))
         
         planet.runAction((SCNAction.repeatForever(rotation)))
     }
+    
+    //MARK:- CREATING THE RINGS AROUND THE SUN FOR THE PLANETS
     
     func createRings(ringSize: Float) -> SCNNode{
         
@@ -91,6 +157,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         return ringNode
         
     }
+    
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -109,16 +177,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
-    // MARK: - ARSCNViewDelegate
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
